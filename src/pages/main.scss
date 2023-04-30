@@ -1,0 +1,168 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    background: #f6eee3;
+    font-family: 'Chillax-Variable', sans-serif;
+}
+
+@font-face {
+    font-family: 'Chillax-Variable';
+    src: url('./fonts/Chillax-Variable.woff2') format('woff2'),
+         url('./fonts/Chillax-Variable.woff') format('woff'),
+         url('./fonts/Chillax-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Chillax-Extralight';
+    src: url('./fonts/Chillax-Extralight.woff2') format('woff2'),
+         url('./fonts/Chillax-Extralight.woff') format('woff'),
+         url('./fonts/Chillax-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Chillax-Light';
+    src: url('./fonts/Chillax-Light.woff2') format('woff2'),
+         url('./fonts/Chillax-Light.woff') format('woff'),
+         url('./fonts/Chillax-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Chillax-Regular';
+    src: url('./fonts/Chillax-Regular.woff2') format('woff2'),
+         url('./fonts/Chillax-Regular.woff') format('woff'),
+         url('./fonts/Chillax-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Chillax-Medium';
+    src: url('./fonts/Chillax-Medium.woff2') format('woff2'),
+         url('./fonts/Chillax-Medium.woff') format('woff'),
+         url('./fonts/Chillax-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Chillax-Semibold';
+    src: url('./fonts/Chillax-Semibold.woff2') format('woff2'),
+         url('./fonts/Chillax-Semibold.woff') format('woff'),
+         url('./fonts/Chillax-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Chillax-Bold';
+    src: url('./fonts/Chillax-Bold.woff2') format('woff2'),
+         url('./fonts/Chillax-Bold.woff') format('woff'),
+         url('./fonts/Chillax-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  section{
+      position: relative;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      height: 830px;
+      background-color: rgb(236, 228, 216);
+
+      .container{
+          max-width: 1360px;
+          padding-left: 15px;
+          padding-right: 15px;
+         
+          
+
+        .figure{
+            height: 580px;
+            width: 580px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            
+
+            .img-placeholder{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 600px;
+                width: 600px;
+                overflow: hidden;
+                background-color: black;
+            }
+
+            .label{
+                position: absolute;
+                top: 2%;
+                left: -6%;
+                transform: rotate(180deg);
+                writing-mode: vertical-rl;
+                color: black;
+
+                .serial{
+                    font-weight: 700;
+                }
+            }
+
+            .title{
+                font-size: 100px;
+                font-weight: 800;
+                line-height: 100px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: translate(5%, 70%);
+                color: black;
+            }
+        }
+      }
+  }
+
+
+  section:nth-child(odd) {
+      .container{
+          .figure{
+              transform: translate(-20%, -65%);
+          }
+      }
+  }
+
+  section:nth-child(even) {
+    .container{
+        .figure{
+            transform: translate(-90%, -55%);
+        }
+    }
+}
+
