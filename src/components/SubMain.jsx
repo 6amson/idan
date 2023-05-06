@@ -266,19 +266,36 @@ export default function SubMain() {
                 setCountdown(countdown++)
                 if (countdown >= 100) {
                     clearInterval(timerLoader);
+
+                    
                 }
             }, 100)
         }, 13500);
 
         setTimeout(() => {
-            gsap.to('.subMainLoading', {
-                height: '0vh',
-                duration: .5,
-                ease: 'easeOut',
+            
+            gsap.to('.subMainLoading1', {
+                display: 'none',
+                opacity: 0,
+            })
+
+            gsap.to('.subMainLoading2', {
+                display: 'none',
+                opacity: 0,
             })
         }, 19000);
 
+        setTimeout(() => {
 
+
+            gsap.to('.subMainLoading', {
+                height: '0vh',
+                duration: .8 ,
+                ease: 'easeOut',
+            })
+        }, 19600);
+
+        
 
         
     }, [])

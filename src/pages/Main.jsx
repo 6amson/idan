@@ -4,19 +4,21 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import hoverEffect from 'hover-effect';
 import SubMain from '../components/SubMain'
+import Mainbody from "../components/Mainbody";
 
 
 
 export default function Main() {
 
     return (
-       <section className="section1">
-           < SubMain/>
+        <div className="section1">
+            <section>
+                < SubMain />
+            </section>
+            <section>
+                <Mainbody />
+            </section>
+        </div>
 
-           <div>
-               
-           </div>
-       </section>
-       
     )
 }

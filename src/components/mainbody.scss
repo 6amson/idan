@@ -1,0 +1,35 @@
+@import '../pages/scss/global.scss';
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+
+
+
+// header{
+//     width: fit-content;
+//   height: fit-content;
+//   transform-style: preserve-3d; /* enable 3D space */
+//   transform-origin: 50% 0%  50%;
+  
+// }
+
+// header:hover{
+//     animation: rotateX 1s linear;
+// }
+
+// @keyframes rotateX {
+//     0% {
+//       transform: rotateX(0deg);
+//     }
+//     100% {
+//       transform: rotateX(360deg);
+//     }
+//   }
+
+.priDiv{
+    margin: $medium-spacing;
+}

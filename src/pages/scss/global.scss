@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html{
+     overflow: hidden;
+}
+
 $vsmall-spacing: 4px;
 $small-spacing: 8px;
 $medium-spacing: 16px;
