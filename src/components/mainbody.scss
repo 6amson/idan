@@ -5,18 +5,38 @@
     height: 100vh;
     background: black;
     color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
 
-// header{
-//     width: fit-content;
-//   height: fit-content;
-//   transform-style: preserve-3d; /* enable 3D space */
-//   transform-origin: 50% 0%  50%;
-  
-// }
+header{
+    width: fit-content;
+  height: fit-content;
+  transform-style: preserve-3d; /* enable 3D space */
+  transform-origin: 50% 0%  50%;
+  color: $main-color;
+  font-family: $clashfont;
+  font-weight: 600;
+  margin: 0 $extreme-spacing;
 
+  p{
+      margin-top: $vlarge-spacing;
+      z-index: 10;
+  }
+}
+
+
+.magicDiv{
+    position: absolute;
+    font-size: 400px;
+    letter-spacing: 50px;
+    top: -200px;
+    left: -150px;
+    color: rgb(15, 15, 15);
+    transform: scale(1.1);
+}
 // header:hover{
 //     animation: rotateX 1s linear;
 // }
@@ -31,5 +51,114 @@
 //   }
 
 .priDiv{
-    margin: $medium-spacing;
+    margin: $vlarge-spacing $extreme-spacing;
+    height: 80vh;
+    position: relative;
+    color: rgb(255, 255, 255);
+    // background: green;
+   
+}
+
+.videoDiv{
+    position: absolute;
+    height: 60vh;
+    top: 0;
+    right: 0;
+}
+
+.video3{
+        filter: grayscale(80%);
+        width: inherit;
+        object-fit: cover;
+        object-position: 0px 0px;
+        height: inherit;
+        position: relative;
+        z-index: 1;
+}
+
+.firstDiv1{
+    width: 60%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    
+    p{
+        font-size: $vlarge-spacing;
+        font-family: $clashfont;
+        font-weight: 600;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+
+    p:nth-child(2){
+        // color: $main-color;
+        margin-right: 15px;
+    }
+}
+
+
+.firstDiv2{
+    position: absolute;
+    p{
+        transform: rotate(360deg);
+
+    }
+}
+
+.burnaText{
+    position: absolute;
+    color: rgb(86, 41, 41);
+    right: 270px;
+    top: 450px;
+    font-family: $clashfont;
+    z-index: 1000;
+
+}
+
+
+.spinningDiv{
+    position: absolute;
+    top: 40vh;
+    width: 300px;
+    height: 300px;
+}
+
+.spinningDivv{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinningDivPara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: -16%;
+    animation: rotate 10s linear infinite;
+    transform-origin: 0 100px;
+    
+    span{
+        position: absolute;
+        transform-origin: 0 100px;
+    }
+}
+
+
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+   
+    100%{
+        transform: rotate(360deg);
+    }
 }

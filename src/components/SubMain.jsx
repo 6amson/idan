@@ -30,11 +30,7 @@ export default function SubMain() {
 
 
     useEffect(() => {
-
-
-
-
-
+        
         vid.current.play();
         vid2.current.play();
 
@@ -262,12 +258,14 @@ export default function SubMain() {
         }, 12500);
 
         setTimeout(() => {
+            gsap.to('.subMainLoading', {
+                display: 'block',
+            
+            })
             const timerLoader = setInterval(() => {
                 setCountdown(countdown++)
                 if (countdown >= 100) {
-                    clearInterval(timerLoader);
-
-                    
+                    clearInterval(timerLoader);  
                 }
             }, 100)
         }, 13500);

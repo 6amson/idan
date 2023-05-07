@@ -25,7 +25,14 @@ $chillfont: 'Chillax-Variable';
 $renfont: 'Ranade-Variable';
 $clashfont: 'ClashDisplay-Variable';
 $generalfont: 'GeneralSans-Variable';
-
+$melofont: 'Melodrama-Variable';
+$pencefont: 'Pencerio-Hairline';
+$nippofont: 'Nippo-Variable';
+$comicfont: 'Comico-Regular';
+$starfont : 'Stardom-Regular';
+$akturafont: 'Aktura-Regular';
+$kolafont: 'Kola-Regular';
+$britfont: 'Britney-Variable';
 
 
 
@@ -493,5 +500,245 @@ $generalfont: 'GeneralSans-Variable';
    }
    
    
+
+   @font-face {
+     font-family: 'Aktura-Regular';
+     src: url('../fonts/Aktura-Regular.woff2') format('woff2'),
+          url('../fonts/Aktura-Regular.woff') format('woff'),
+          url('../fonts/Aktura-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Nippo-Variable';
+     src: url('../fonts/Nippo-Variable.woff2') format('woff2'),
+          url('../fonts/Nippo-Variable.woff') format('woff'),
+          url('../fonts/Nippo-Variable.ttf') format('truetype');
+          font-weight: 200 700;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Nippo-Extralight';
+     src: url('../fonts/Nippo-Extralight.woff2') format('woff2'),
+          url('../fonts/Nippo-Extralight.woff') format('woff'),
+          url('../fonts/Nippo-Extralight.ttf') format('truetype');
+          font-weight: 200;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Nippo-Light';
+     src: url('../fonts/Nippo-Light.woff2') format('woff2'),
+          url('../fonts/Nippo-Light.woff') format('woff'),
+          url('../fonts/Nippo-Light.ttf') format('truetype');
+          font-weight: 300;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Nippo-Regular';
+     src: url('../fonts/Nippo-Regular.woff2') format('woff2'),
+          url('../fonts/Nippo-Regular.woff') format('woff'),
+          url('../fonts/Nippo-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Nippo-Medium';
+     src: url('../fonts/Nippo-Medium.woff2') format('woff2'),
+          url('../fonts/Nippo-Medium.woff') format('woff'),
+          url('../fonts/Nippo-Medium.ttf') format('truetype');
+          font-weight: 500;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Nippo-Bold';
+     src: url('../fonts/Nippo-Bold.woff2') format('woff2'),
+          url('../fonts/Nippo-Bold.woff') format('woff'),
+          url('../fonts/Nippo-Bold.ttf') format('truetype');
+          font-weight: 700;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Comico-Regular';
+     src: url('../fonts/Comico-Regular.woff2') format('woff2'),
+          url('../fonts/Comico-Regular.woff') format('woff'),
+          url('../fonts/Comico-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+
+
+   @font-face {
+     font-family: 'Pencerio-Hairline';
+     src: url('../fonts/Pencerio-Hairline.woff2') format('woff2'),
+          url('../fonts/Pencerio-Hairline.woff') format('woff'),
+          url('../fonts/Pencerio-Hairline.ttf') format('truetype');
+          font-weight: 50;
+          font-display: swap;
+          font-style: normal;
+   }
+
+
+   @font-face {
+     font-family: 'Stardom-Regular';
+     src: url('../fonts/Stardom-Regular.woff2') format('woff2'),
+          url('../fonts/Stardom-Regular.woff') format('woff'),
+          url('../fonts/Stardom-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+
+   
+@font-face {
+     font-family: 'Melodrama-Variable';
+     src: url('../fonts/Melodrama-Variable.woff2') format('woff2'),
+          url('../fonts/Melodrama-Variable.woff') format('woff'),
+          url('../fonts/Melodrama-Variable.ttf') format('truetype');
+          font-weight: 300 700;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Melodrama-Light';
+     src: url('../fonts/Melodrama-Light.woff2') format('woff2'),
+          url('../fonts/Melodrama-Light.woff') format('woff'),
+          url('../fonts/Melodrama-Light.ttf') format('truetype');
+          font-weight: 300;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Melodrama-Regular';
+     src: url('../fonts/Melodrama-Regular.woff2') format('woff2'),
+          url('../fonts/Melodrama-Regular.woff') format('woff'),
+          url('../fonts/Melodrama-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Melodrama-Medium';
+     src: url('../fonts/Melodrama-Medium.woff2') format('woff2'),
+          url('../fonts/Melodrama-Medium.woff') format('woff'),
+          url('../fonts/Melodrama-Medium.ttf') format('truetype');
+          font-weight: 500;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Melodrama-Semibold';
+     src: url('../fonts/Melodrama-Semibold.woff2') format('woff2'),
+          url('../fonts/Melodrama-Semibold.woff') format('woff'),
+          url('../fonts/Melodrama-Semibold.ttf') format('truetype');
+          font-weight: 600;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Melodrama-Bold';
+     src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
+          url('../fonts/Melodrama-Bold.woff') format('woff'),
+          url('../fonts/Melodrama-Bold.ttf') format('truetype');
+          font-weight: 700;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+
+
+   @font-face {
+     font-family: 'Kola-Regular';
+     src: url('../fonts/Kola-Regular.woff2') format('woff2'),
+          url('../fonts/Kola-Regular.woff') format('woff'),
+          url('../fonts/Kola-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+
+   @font-face {
+     font-family: 'Britney-Variable';
+     src: url('../fonts/Britney-Variable.woff2') format('woff2'),
+          url('../fonts/Britney-Variable.woff') format('woff'),
+          url('../fonts/Britney-Variable.ttf') format('truetype');
+          font-weight: 300 900;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Britney-Light';
+     src: url('../fonts/Britney-Light.woff2') format('woff2'),
+          url('../fonts/Britney-Light.woff') format('woff'),
+          url('../fonts/Britney-Light.ttf') format('truetype');
+          font-weight: 300;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Britney-Regular';
+     src: url('../fonts/Britney-Regular.woff2') format('woff2'),
+          url('../fonts/Britney-Regular.woff') format('woff'),
+          url('../fonts/Britney-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Britney-Bold';
+     src: url('../fonts/Britney-Bold.woff2') format('woff2'),
+          url('../fonts/Britney-Bold.woff') format('woff'),
+          url('../fonts/Britney-Bold.ttf') format('truetype');
+          font-weight: 700;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+   
+   @font-face {
+     font-family: 'Britney-Ultra';
+     src: url('../fonts/Britney-Ultra.woff2') format('woff2'),
+          url('../fonts/Britney-Ultra.woff') format('woff'),
+          url('../fonts/Britney-Ultra.ttf') format('truetype');
+          font-weight: 1000;
+          font-display: swap;
+          font-style: normal;
+   }
    
    
