@@ -1,5 +1,6 @@
 @import '../pages/scss/global.scss';
 
+
 .subMainReplay{
     background-color: black;
     height: 100vh;
@@ -139,6 +140,7 @@
     width: 100vw;
     height: 100vh;
     color: $main-color;
+    overflow: hidden;
 }
 
 .subMainLoading1{

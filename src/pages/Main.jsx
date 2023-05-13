@@ -15,9 +15,6 @@ export default function Main() {
             <section>
                 < SubMain />
             </section>
-            <section>
-                <Mainbody />
-            </section>
         </div>
 
     )

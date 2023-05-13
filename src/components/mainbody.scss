@@ -1,42 +1,73 @@
 @import '../pages/scss/global.scss';
 
+
+
 .mainContainer{
+    overflow-x: hidden;
+    position: relative;
+    background: wheat;
+}
+
+.mainbody{
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
     width: 100vw;
     height: 100vh;
-    background: black;
+    // background: black;
     color: white;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    margin-top: 0;
 }
 
 
 
-header{
-    width: fit-content;
+.headerDiv{ 
+  position: relative;
+//   width: fit-content;
   height: fit-content;
   transform-style: preserve-3d; /* enable 3D space */
   transform-origin: 50% 0%  50%;
   color: $main-color;
   font-family: $clashfont;
   font-weight: 600;
-  margin: 0 $extreme-spacing;
-
-  p{
-      margin-top: $vlarge-spacing;
-      z-index: 10;
-  }
+  padding:  8vh $extreme-spacing;
+  //   z-index: 10;
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
+
+
+.lineDiv{
+    border: solid 1px grey;
+    width: calc(100vw - 420px);
+    position: relative;
+    display: flex;
+    top: -13px;
+}
+
+.firstDiv{
+    display: flex;
+}
+
 
 
 .magicDiv{
+    width: fit-content;
+    height: fit-content;
     position: absolute;
     font-size: 400px;
-    letter-spacing: 50px;
-    top: -200px;
-    left: -150px;
-    color: rgb(15, 15, 15);
-    transform: scale(1.1);
+    letter-spacing: 100px;
+    top: -100px;
+    left: -70px;
+    color: rgb(206, 240, 192);
+    transform: scale(1.2);
+    z-index: -1;
+    user-select: none;
 }
+
 // header:hover{
 //     animation: rotateX 1s linear;
 // }
@@ -50,84 +81,123 @@ header{
 //     }
 //   }
 
+
 .priDiv{
-    margin: $vlarge-spacing $extreme-spacing;
-    height: 80vh;
+    margin: 0 $extreme-spacing;
     position: relative;
-    color: rgb(255, 255, 255);
-    // background: green;
-   
+    color: rgb(0, 0, 0);
+    z-index: 100;
+    // height: calc(100vh - 18.5vh);
 }
 
 .videoDiv{
-    position: absolute;
-    height: 60vh;
+    position: relative;
+    height: 70vh;
     top: 0;
     right: 0;
+    
 }
 
 .video3{
-        filter: grayscale(80%);
-        width: inherit;
-        object-fit: cover;
-        object-position: 0px 0px;
-        height: inherit;
-        position: relative;
-        z-index: 1;
+    filter: grayscale(80%);
+    // width: inherit;
+    object-fit: cover;
+    object-position: 0px 0px;
+    height: inherit;
+    position: relative;
+    z-index: 1;
+}
+
+.burnaText{
+    position: absolute;
+    color: rgb(86, 41, 41);
+    font-family: $clashfont;
+    z-index: 1000;
+    left: 20px;
+    top: 20px;
+    font-size: 10px;
 }
 
 .firstDiv1{
-    width: 60%;
-    position: absolute;
+    width: 70vw;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     
     p{
-        font-size: $vlarge-spacing;
+        font-size: 90px;
         font-family: $clashfont;
-        font-weight: 600;
+        font-weight: 700;
         padding: 0;
         letter-spacing: 2px;
-    }
-
-    p:nth-child(2){
-        // color: $main-color;
-        margin-right: 15px;
     }
 }
 
 
 .firstDiv2{
     position: absolute;
-    p{
-        transform: rotate(360deg);
+    font-family: $clashfont;
+    height: 150px;
+    display: flex;
+    right: 550px;
+    top: 300px;
+    z-index: 100;
 
+    p{
+        width: 200px;
+        // writing-mode: vertical-rl;
+        position: relative;
+        top: 25px;
+        margin-right: 10px;
     }
 }
 
-.burnaText{
+.firstDiv3{
+    // background: rgb(0, 0, 0);
+    color: rgb(126, 113, 113);
+    text-transform: uppercase;
+    display: flex;
+    justify-items: center;
     position: absolute;
-    color: rgb(86, 41, 41);
-    right: 270px;
-    top: 450px;
-    font-family: $clashfont;
-    z-index: 1000;
+    width: 50vw;
+    top: 350px;
+    left: 200px;
 
+
+
+    p{
+        height: 25vh;
+        width: 30vw;
+        font-size: 35px;
+        font-weight: 700;
+        font-family: $melofont;
+        display: flex;
+        align-items: end;
+    }
+}
+
+.ronaldoDiv{
+    width: 200px;
+    height: inherit;
+    background-image: url('https://phantom-marca.unidadeditorial.es/497fbd11cb2330a6fa1c122d502a4c3e/crop/152x0/1866x1143/resize/828/f/webp/assets/multimedia/imagenes/2022/10/11/16655080063426.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   
 }
 
 
 .spinningDiv{
     position: absolute;
-    top: 40vh;
+    top: 50vh;
     width: 300px;
-    height: 300px;
+    height: fit-content;
 }
 
 .spinningDivv{
     position: relative;
     width: 150px;
     height: 150px;
-    background: red;
+    background: $main-color;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -142,12 +212,52 @@ header{
     top: -16%;
     animation: rotate 10s linear infinite;
     transform-origin: 0 100px;
+
+   
     
     span{
         position: absolute;
         transform-origin: 0 100px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: $chillfont;
+        letter-spacing: -10px;
     }
 }
+
+// text {
+//     fill: rgb(0, 0, 0);
+//     font-family: $clashfont;
+//     font-size: 22px;
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     // font-variant-ligatures: none;
+//     letter-spacing: 6px;
+//     animation: rotate 25s linear infinite;
+//     transform-origin: 250px 250px;
+//     position: absolute;
+//     z-index: 10000;
+//   }
+
+
+//   svg{
+//     max-width: 80vmin;
+//   }
+  
+//   @keyframes rotate {
+//     to {
+//       transform: rotate(360deg);
+//     }
+//   }
+  
+//   .textcircle {
+//     transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+//     transform-origin: 250px 250px;
+//   }
+  
+//   svg:hover .textcircle {
+//     transform: scale(1.2) rotate(90deg);
+//   }
 
 
 
@@ -160,5 +270,78 @@ header{
    
     100%{
         transform: rotate(360deg);
+    }
+}
+
+.stars{
+    // position: absolute;
+    background: black;  
+    border-radius: 50%;    
+    width: 45px;
+    height: 45px;          
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    border: solid $main-color 1px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .firstDiv1{
+        width: 70vw;
+        
+        p{
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .firstDiv1{
+        width: 70vw;
+        
+        p{
+            font-size: 40px;
+        }
+    }
+
+    .videoDiv{
+        height: 50vh;
+        
+    }
+
+    .lineDiv{
+        width: calc(100vw - 200px);
+    }
+
+    
+.stars{  
+    width: 35px;
+    height: 35px;
+    
+    .star{
+        height: 20px;
+    }
+}
+}
+  
+
+@media screen and (max-width: 450px) {
+    
+    .firstDiv1{
+        width: 70vw;
+        
+        p{
+            font-size: 35px;
+        }
+    }
+
+    .videoDiv{
+        height: 40vh;
+        
     }
 }

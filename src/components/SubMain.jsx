@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { useNavigate } from 'react-router-dom';
 import './submain.scss'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,6 +12,8 @@ import SplitType from 'split-type';
 
 
 export default function SubMain() {
+
+    const navigate = useNavigate();
 
     let [countdown, setCountdown] = useState(0);
 
@@ -30,7 +33,7 @@ export default function SubMain() {
 
 
     useEffect(() => {
-        
+
         vid.current.play();
         vid2.current.play();
 
@@ -260,18 +263,18 @@ export default function SubMain() {
         setTimeout(() => {
             gsap.to('.subMainLoading', {
                 display: 'block',
-            
+
             })
             const timerLoader = setInterval(() => {
                 setCountdown(countdown++)
                 if (countdown >= 100) {
-                    clearInterval(timerLoader);  
+                    clearInterval(timerLoader);
                 }
             }, 100)
         }, 13500);
 
         setTimeout(() => {
-            
+
             gsap.to('.subMainLoading1', {
                 display: 'none',
                 opacity: 0,
@@ -288,14 +291,18 @@ export default function SubMain() {
 
             gsap.to('.subMainLoading', {
                 height: '0vh',
-                duration: .8 ,
+                duration: .8,
                 ease: 'easeOut',
+                onComplete: function () {
+                   navigate('/main')
+                }
+
             })
         }, 19600);
 
-        
 
-        
+
+
     }, [])
 
     return (
