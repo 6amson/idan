@@ -167,14 +167,14 @@
 
 
     p{
-        // height: 25vh;
-        // width: 30vw;
-        // font-size: 30px;
-        // font-weight: 700;
-        // font-family: $melofont;
-        // display: flex;
-        // align-items: end;
-        display: none;
+        height: 25vh;
+        width: 30vw;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: $melofont;
+        display: flex;
+        align-items: end;
+        // display: none;
     }
 }
 
@@ -313,6 +313,19 @@
     .spinningDiv{
         display: none;
     }
+
+    .firstDiv3{
+        top: 400px;
+        left: 200px;
+       
+    
+    
+    
+        p{
+            width: inherit;
+            font-size: 20px;
+        }
+    }
 }
 
 
@@ -420,10 +433,10 @@
 }
 
 .magicDiv{
-    top: 100px;
+    top: 150px;
     left: -155px;
     transform: rotate(90deg);
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     margin-bottom: 100px;
 }
 
