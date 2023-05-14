@@ -6,6 +6,7 @@
     overflow-x: hidden;
     position: relative;
     background: wheat;
+
 }
 
 .mainbody{
@@ -13,7 +14,7 @@
     background: rgba(255, 255, 255, 0.5);
     position: relative;
     width: 100vw;
-    // height: 100vh;
+    height: 100vh;
     // background: black;
     color: white;
     margin-top: 0;
@@ -166,13 +167,14 @@
 
 
     p{
-        height: 25vh;
-        width: 30vw;
-        font-size: 35px;
-        font-weight: 700;
-        font-family: $melofont;
-        display: flex;
-        align-items: end;
+        // height: 25vh;
+        // width: 30vw;
+        // font-size: 30px;
+        // font-weight: 700;
+        // font-family: $melofont;
+        // display: flex;
+        // align-items: end;
+        display: none;
     }
 }
 
@@ -289,15 +291,19 @@
 
 /********************MEDIA QUERIES*******************/
 @media screen and (max-width: 1250px) {
+    .firstDiv1{
+        width: 70vw;
+        
+        p{
+            font-size: 70px;
+        }
+    }
+
+
     .firstDiv2{
         right: calc(40vw - 100px);
-        top: 400px;
+        top: 300px;
         height: 15vh;
-       
-    
-        // p{
-           
-        // }
     }
 
     .videoDiv{
@@ -407,6 +413,7 @@
 }
 
     .videoDiv{
+        top: -50px;
         height: 35vh;
         margin-left: -100px;
         z-index: -1;
