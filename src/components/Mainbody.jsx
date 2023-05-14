@@ -74,7 +74,7 @@ export default function Mainbody() {
                                 <p>Burna Boy</p>
                                 <p>&#169; 2021</p>
                             </div>
-                            <video className="video3" ref={vid3} loop autoplay muted>
+                            <video className="video3" ref={vid3} loop autoplay playsinline muted>
                                 <source src={burna} type="video/mp4" />
                                 Sorry, your web browser doesn't support video.
                             </video>
