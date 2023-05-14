@@ -420,8 +420,15 @@
 }
 
 .magicDiv{
+    top: 100px;
     left: -155px;
     transform: rotate(90deg);
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+}
+
+.mainbody{
+    height: 100vh;
 }
 
 }
