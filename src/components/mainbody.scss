@@ -14,7 +14,7 @@
     background: rgba(255, 255, 255, 0.5);
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     // background: black;
     color: white;
     margin-top: 0;
@@ -412,10 +412,16 @@
     margin-top: -20px;
 }
 
-    .videoDiv{
+.videoDiv{
         top: -50px;
         height: 35vh;
         margin-left: -100px;
         z-index: -1;
-    }
+}
+
+.magicDiv{
+    left: -155px;
+    transform: rotate(90deg);
+}
+
 }
