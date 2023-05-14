@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import hoverEffect from 'hover-effect';
 import SplitType from 'split-type';
 import burna from '../assets/burna.mp4';
+import burna2 from '../assets/Burna (1)2.mp4';
 import wizkid from '../assets/wizkid.mp4';
 import star from '../assets/star.svg';
 
@@ -76,6 +77,7 @@ export default function Mainbody() {
                             </div>
                             <video className="video3" ref={vid3} loop autoplay playsinline muted>
                                 <source src={burna} type="video/mp4" />
+                                <source src={burna2} type="video/mp4" />
                                 Sorry, your web browser doesn't support video.
                             </video>
                         </div>
