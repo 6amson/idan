@@ -101,7 +101,6 @@
 }
 
 .video3{
-    filter: grayscale(80%);
     // width: inherit;
     object-fit: cover;
     object-position: 0px 0px;
@@ -179,6 +178,7 @@
 }
 
 .ronaldoDiv{
+    filter: grayscale(80%);
     width: 200px;
     height: inherit;
     background-image: url('https://phantom-marca.unidadeditorial.es/497fbd11cb2330a6fa1c122d502a4c3e/crop/152x0/1866x1143/resize/828/f/webp/assets/multimedia/imagenes/2022/10/11/16655080063426.png');
