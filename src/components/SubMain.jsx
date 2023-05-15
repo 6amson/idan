@@ -144,7 +144,7 @@ export default function SubMain() {
                 opacity: 1,
                 delay: 0.2,
                 duration: 1,
-                y: 100,
+                y: 50,
                 ease: 'easeIn',
             }),
         )
