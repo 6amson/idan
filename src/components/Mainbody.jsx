@@ -74,9 +74,7 @@ export default function Mainbody() {
                                 <p>Burna Boy</p>
                                 <p>&#169; 2021</p>
                             </div>
-                            <video className="video3" src="https://res.cloudinary.com/dis6jfj29/video/upload/ac_none,br_1814k,vc_h264/v1684160234/burna_iddrr9.mp4" type="video/mp4" ref={vid3} loop="loop" autoplay="autoplay" preload="auto" playsinline muted="muted">
-                                Sorry, your web browser doesn't support video.
-                            </video>
+                            <video className="video3" src="https://res.cloudinary.com/dis6jfj29/video/upload/ac_none,br_1814k,vc_h264/v1684160234/burna_iddrr9.mp4" type="video/mp4" ref={vid3} loop="loop" autoplay="autoplay" preload="auto" playsinline muted="muted"></video>
                         </div>
                     </div>
 
