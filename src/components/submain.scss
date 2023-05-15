@@ -164,3 +164,104 @@
     color: rgb(74, 74, 74);
     font-size: 44px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************MEDIA QUERIES*******************/
+@media screen and (max-width: 800px) {
+
+    .subMainReplayPara1, .subMainReplayPara2{
+        font-size: 25px;
+    }
+
+    .subMainReplayVid2{
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        height: 50vh;
+        
+        
+         .video2{
+           height: inherit;
+           width: inherit;
+           
+        }
+    
+    }
+
+    .subMainReplayVid1{
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        height: 50vh;
+        
+        
+         .video1{
+           height: inherit;
+           width: inherit;
+           
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .subMainReplayPara1, .subMainReplayPara2{
+        font-size: 20px;
+    }
+
+    .subMainReplayVid1{
+        position: absolute;
+        top: 30%;
+        left: 13%;
+        height: 50vh;
+        
+        
+         .video1{
+           height: inherit;
+           width: inherit;
+           
+        }
+    
+    }
+
+    .subMainReplayVid2{
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        height: 50vh;
+        
+        
+         .video2{
+           height: inherit;
+           width: inherit;
+           
+        }
+    
+    }
+
+    .subMainReplay3{
+        font-size: 32px;
+      }
+
+.subMainLoading2{
+    top: 350px;
+}
+
+.subMainLoading1{
+    top: 350px;
+}
+
+}
