@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import hoverEffect from 'hover-effect';
 import SplitType from 'split-type';
-import burna from '../assets/Burna.mp4';
+import burna from '../assets/burna.mp4';
 import wizkid from '../assets/wizkid.mp4';
 import star from '../assets/star.svg';
 
