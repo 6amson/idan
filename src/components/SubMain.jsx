@@ -314,7 +314,7 @@ export default function SubMain() {
                     </p>
                     <div className="subMainReplayVid1">
                         <video className="video1" loop ref={vid} autoplay muted>
-                            <source src={doctor} type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dis6jfj29/video/upload/br_1500k,vc_h264/v1684160387/doctor_zxbcu5.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="subMainReplayVidBlock1"></div>
@@ -327,7 +327,7 @@ export default function SubMain() {
                     </p>
                     <div className="subMainReplayVid2">
                         <video className="video2" loop ref={vid2} autoplay muted>
-                            <source src={lab} type="video/mp4" />
+                            <source src="https://res.cloudinary.com/dis6jfj29/video/upload/br_1500k,vc_h264/v1684160377/lab_mc9zts.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="subMainReplayVidBlock2"></div>
