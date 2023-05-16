@@ -284,7 +284,7 @@ export default function SubMain() {
                 display: 'none',
                 opacity: 0,
             })
-        }, 19000);
+        }, 23000);
 
         setTimeout(() => {
 
@@ -298,7 +298,7 @@ export default function SubMain() {
                 }
 
             })
-        }, 19600);
+        }, 25000);
 
 
 
